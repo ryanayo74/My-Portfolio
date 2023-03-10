@@ -36,6 +36,12 @@ nav{
     align-items:center;
     justify-content: space-between;
     padding: 3% 7%;
+    filter: drop-shadow(0px 4px 4px rgba(238, 237, 237, 0.25));
+}
+
+nav ul li :hover{
+    transition: all 0.8s;
+    color: #df2941;
 }
 
 nav ul li{
@@ -83,19 +89,18 @@ nav ul li a{
 
 .about-text h2{
     font-size: 60px;
-    /* background-color:green; */
+    
     padding-top: 6rem;
 }
 
 .about-text p{
-    /* background-color: blue; */
+   
     padding-top: 2rem;
     line-height: 1.8rem;
    text-align: center;
 }
 
 .about-skills{
-    /* background-color: orangered; */
     width: 50%;
     color: white;
     margin: auto;
@@ -109,9 +114,13 @@ nav ul li a{
 .about-skills h3{
     padding-right: 5%;
 }
+.about-skills h3:hover{
+cursor: pointer;
+transition: all 0.8s;
+background-color: #5762dd;
 
+}
 .about-skills__h3--1{
-    border-bottom: 3px solid #20E700;
     width: 5%;
     margin-right: 50px;
 }
@@ -121,9 +130,9 @@ nav ul li a{
     height: 100vh;
     padding: 50px 0;
     text-align: center;
-    color: #362D2D;
+    color: #ece7e7;
     font-size: 60px;
-
+    background-color: #2b1f4e;
 }
 
 .portfolio__container{
@@ -132,6 +141,7 @@ nav ul li a{
     grid-gap:40px;
     padding: 5%;
     margin-top: 50px;
+    
 }
 
 .portfolio h2{
@@ -151,10 +161,15 @@ nav ul li a{
     border-radius: 10px;
     display: block;
 }
+.portfolio__btn:hover
+{
+    transition: all 0.8s;
+    background-color: #565761;
 
+}
 .portfolio__btn{
     background-color: #45893A;
-    color: #fff;
+    color: #f1efef;
     height: 84px;
     width: 287px;
     border-radius: 10px;
@@ -260,6 +275,7 @@ form input, form textarea{
 .contact__btn--2:hover{
     background:#2ecc71;
     cursor: pointer;
+    transition: 0.8s;
 }
 
 footer{
@@ -267,7 +283,7 @@ footer{
     width: 100%;
     text-align: center;
     padding: 3% 0;
-    background-color: #D9D9D9;
+    background-color: #96a5d6;
     font-weight: 300;
 
 
