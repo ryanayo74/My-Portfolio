@@ -5,38 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RA Portfolio</title>
+    <title>Ryan's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- *******************************HEADER SECTION *******************************-->
     <header>
-        <div class="header">
-            <nav>
-                <a href="#" class="header-brand">PORT<span class="header-brand__span">FOLIO</span></a>
-                <ul>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#about">About</a> </li>
-                    <li><a href="#portfolio">Portfolio</a> </li>
-                    <li><a href="#contact">Contact</a> </li>
-                </ul>
+        <div class="header" id="home">
+            <div class="header__image"><img
+                    src="https://i.pinimg.com/564x/ee/77/a8/ee77a8fd11678ccbf7e471023f159d91.jpg"
+                    alt="header image small" loading="lazy"></div>
+            <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-dark navbar-dark"
+                style="background-color:#24232360 !important;">
+                <div class="container-fluid">
+                    <a href="#" class="header-brand navbar-brand">PORT<span class="header-brand__span">FOLIO</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="#home">Home</a> </li>
+                            <li class="nav-item"><a href="#about">About</a> </li>
+                            <li class="nav-item"><a href="#portfolio">Portfolio</a> </li>
+                            <li class="nav-item"><a href="#contact">Contact</a> </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            
+            <!-- Desktop -->
             <div class="header-text">
-                <h1>Ryan Ayo</h1>
-                <h2>Freelance Front-end Web Developer</h2>
+                <b><h1>Ryan Ayo</h1>
+                <h2>Freelance Front-end Web Developer</h2></b>
+            </div>
+            <!-- Mobile 600 max-width -->
+            <div class="header-text--2">
+                <h1>Hi I am, <span>Ryan Ayo</span>
+                    <h2>BSIT STUDENT</h2>
+                </h2>
             </div>
         </div>
     </header>
     <!-- *******************************ABOUT ME SECTION *******************************-->
     <section>
-        <div class="about">
+        <div class="about" id="about">
+            <div class="about-img">
+                <img src="https://github.com/KodeGo-Bootcamp/HTML-Activity-Images/blob/main/pexels-royal-anwar-6981883.jpg?raw=true"
+                    alt="mobile img for about section" loading="lazy">
+            </div>
             <div class="about-text">
                 <h2>ABOUT ME</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, minima! Dolores distinctio
@@ -47,37 +72,42 @@
                 <h3 class="about-skills__h3--1">Skills</h3>
                 <h3 class="about-skills__h3--2">Experience</h3>
                 <h3 class="about-skills__h3--3">Education</h3>
+
             </div>
+           
         </div>
     </section>
 
     <!-- *******************************MY PORTFOLIO SECTION *******************************-->
     <section>
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <h2>MY PORTFOLIO</h2>
             <div class="portfolio__container">
-                <div class="portfolio__img"><img
-                        src="https://qph.cf2.quoracdn.net/main-qimg-9431e07ed17469acb41923d985f7b902-lq"
-                        alt="dog photo blog"></div>
-                <div class="portfolio__img"><img
-                        src="https://qph.cf2.quoracdn.net/main-qimg-190bef3af6e815401e25f6a97c33df8b-lq"
-                        alt="sample image2"></div>
-                <div class="portfolio__img"><img
-                        src="https://www.exmanga.com/wp-content/uploads/2021/12/sanji_final_op.jpg"
-                        alt="sample image3"></div>
+                <div class="portfolio__img"><a
+                    href="https://ryanayo74.github.io/Flappy-Bird/"
+                    target="_blank"><img src="image/Firstgame-landingPage.png" alt="First Project"
+                    loading="lazy"></a></div>
+                <div class="portfolio__img"><a
+                        href="https://specialmemories.neocities.org/COFFEE/Drink%20Menu"
+                        target="_blank"><img src="image/FirstProject-landingPage2.png" alt="First Project"
+                        loading="lazy"></a></div>
+                <div class="portfolio__img"><a
+                        href="https://ryanayo74.github.io/TEA-SHOP/"
+                        target="_blank"><img src="image/tea-shop-landingPage3.PNG" alt="Ryan's Wave Cafelanding page"
+                            loading="lazy"></a></div>
             </div>
-            <a href="https://ryanayo74.github.io/TEA-SHOP/" class="portfolio__btn">See More</a>
+            <a href="#" class="portfolio__btn">See More</a>
         </div>
     </section>
     <!-- *******************************CONTACT SECTION *******************************-->
     <section>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="contact__container">
                 <div class="contact__row">
                     <div class="contact-left">
                         <h2>Contact Me</h2>
                         <p><i class="fa-sharp fa-solid fa-envelope-circle-check"></i>Ryanayo74@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>09099404581</p>
+                        <p><i class="fa-solid fa-phone"></i>+63099404581</p>
                         <div class="contact-left__icons">
                             <a href="#"><i class="fa-brands fa-facebook"></i></a>
                             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
@@ -91,7 +121,7 @@
                             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                             <button type="submit" class="contact__btn contact__btn--2">Submit</button>
                         </form>
-                        
+
                     </div>
                 </div>
             </div>
@@ -99,8 +129,15 @@
     </section>
     <!-- *******************************FOOTER SECTION *******************************-->
     <footer>
-        <p>Copyright 2023 &copy; Ryan Ayo</p>
+        <p>Copyright 2023 &copy; RYan Ayo</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
