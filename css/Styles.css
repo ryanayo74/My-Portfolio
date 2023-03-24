@@ -315,7 +315,7 @@ form textarea {
     cursor: pointer;
 }
 
-footer {
+footer{
     height: 15vh;
     width: 100%;
     text-align: center;
@@ -435,14 +435,26 @@ footer {
 
    }
 
-   .about__para--1{
-    color: #20E700;
-   }
+   
+  .about-skills h3:hover{
+    cursor: pointer;
+    transition: all 0.8s;
+    color: #61dfe4;
+   
+    
+    }
 
+.about-skills h3 {
+    padding-right: 10%;
+}
 
+.about-skills__h3--1 {
+    width: 10%;
+    margin-right: 40px;
+   
+}
 
     
-
 
 
 
@@ -464,13 +476,15 @@ footer {
 
    .portfolio__img img{
         width: 70%;
-        height: 280px;
+        height: 200px;
         margin: 0 auto;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
    }
 
    .portfolio__btn{
     font-size: 4rem;
+    
+   
    }
 
 .portfolio h2 {
